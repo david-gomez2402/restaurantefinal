@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Restaurante Dragón Rojo</title>
+
+<!-- Bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- CSS externo -->
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header class="text-center p-3 bg-danger text-white fs-3 fw-bold">
+🐉 Restaurante Dragón Rojo
+</header>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<div class="container">
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="menuNav">
+<ul class="navbar-nav mx-auto">
+<li class="nav-item"><a class="nav-link text-warning" href="#">Inicio</a></li>
+<li class="nav-item"><a class="nav-link text-warning" href="#menu">Menú</a></li>
+<li class="nav-item"><a class="nav-link text-warning" href="#contacto">Contacto</a></li>
+</ul>
+</div>
+</div>
+</nav>
+
+<section class="hero d-flex align-items-center justify-content-center text-white text-center">
+<h1>Auténtico sabor chino</h1>
+</section>
+
+<section class="container py-5" id="menu">
+<h2 class="text-center mb-4">Menú</h2>
+<div class="row g-4">
+
+<div class="col-md-4">
+<div class="card bg-dark text-white">
+<img src="https://images.unsplash.com/photo-1604908812171-9d6c7b2d9965" class="card-img-top">
+<div class="card-body text-center">
+<h5 class="card-title">Chow Mein</h5>
+<p>$120</p>
+<button class="btn btn-warning" onclick="ordenar('Chow Mein')">Ordenar</button>
+</div>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="card bg-dark text-white">
+<img src="https://images.unsplash.com/photo-1604909053190-7cde8cbb18b9" class="card-img-top">
+<div class="card-body text-center">
+<h5 class="card-title">Arroz Frito</h5>
+<p>$100</p>
+<button class="btn btn-warning" onclick="ordenar('Arroz Frito')">Ordenar</button>
+</div>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="card bg-dark text-white">
+<img src="https://images.unsplash.com/photo-1604908177191-63a2b61c4d4c" class="card-img-top">
+<div class="card-body text-center">
+<h5 class="card-title">Pollo Agridulce</h5>
+<p>$130</p>
+<button class="btn btn-warning" onclick="ordenar('Pollo Agridulce')">Ordenar</button>
+</div>
+</div>
+</div>
+
+</div>
+</section>
+
+<section class="text-center p-4 bg-light" id="contacto">
+<h2>Contacto</h2>
+<p>📍 Ciudad de México</p>
+<p>📞 55-1234-5678</p>
+</section>
+
+<footer class="text-center p-3 bg-danger text-white">
+Proyecto escolar - Diseño web
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- JS externo -->
+<script src="/js/script.js"></script>
+
+</body>
+</html>

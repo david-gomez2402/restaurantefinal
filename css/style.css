@@ -1,0 +1,93 @@
+/* Variables para facilitar cambios de color */
+:root {
+    --rojo-principal: #C41E3A;
+    --dorado: #D4AF37;
+    --oscuro-fondo: #121212;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair+Display', serif;
+}
+
+/* Navbar efecto transparente a sólido */
+.navbar {
+    background-color: rgba(196, 30, 58, 0.95);
+    transition: 0.4s;
+}
+
+/* Efecto en el Hero */
+.hero-section {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+                url('https://images.unsplash.com/photo-1525755662778-989d0524087e?auto=format&fit=crop&q=80&w=1920') center/cover fixed;
+    height: 100vh;
+}
+
+/* Botones personalizados */
+.btn-china {
+    background-color: var(--dorado);
+    border: none;
+    color: white;
+    font-weight: bold;
+}
+
+.btn-china:hover {
+    background-color: #b3942e;
+    color: white;
+}
+
+.btn-china-outline {
+    border: 2px solid white;
+    color: white;
+    font-weight: bold;
+}
+
+.btn-china-outline:hover {
+    background-color: white;
+    color: var(--rojo-principal);
+}
+
+/* Cards del menú */
+.menu-card {
+    transition: 0.3s ease-in-out;
+    border-radius: 20px !important;
+}
+
+.menu-card img {
+    border-radius: 20px 20px 0 0;
+    height: 250px;
+    object-fit: cover;
+}
+
+.menu-card:hover {
+    transform: scale(1.03);
+}
+
+/* Inputs del formulario */
+.form-control:focus {
+    border-color: var(--rojo-principal);
+    box-shadow: 0 0 0 0.25rem rgba(196, 30, 58, 0.25);
+}
+/* ... (Estilos anteriores) ... */
+
+#ticketImprimible {
+    background-color: #fff;
+    color: #000;
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.1);
+}
+
+.list-group-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media print {
+    body * { visibility: hidden; }
+    #ticketImprimible, #ticketImprimible * { visibility: visible; }
+    #ticketImprimible { position: absolute; left: 0; top: 0; width: 100%; }
+}
